@@ -1,0 +1,18 @@
+{
+  "name": "carequeue-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "build": "npm run build --workspace frontend",
+    "lint": "npm run lint --workspace frontend",
+    "start:backend": "npm run start --workspace backend",
+    "preview": "npm run preview --workspace frontend"
+  }
+}
